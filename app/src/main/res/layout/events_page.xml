@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+    <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp" app:srcCompat="@drawable/ic_plus"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:id="@+id/createEvent" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dateFilter" android:contentDescription="@string/createEvent"
+            app:layout_constraintBottom_toBottomOf="@+id/dateFilter"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            android:id="@+id/eventRec"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/dateFilter"
+            android:visibility="gone"/>
+
+    <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/box_back"
+            android:id="@+id/dateFilter" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"/>
+    <TextView
+            android:text="@string/emptyEvents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/emptyEvents"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="50dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

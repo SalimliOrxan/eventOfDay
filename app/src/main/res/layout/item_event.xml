@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" app:cardElevation="3dp" app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:minHeight="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+                android:text="@string/eventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/eventTitle" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/box_back_black"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/eventTitle" android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" android:id="@+id/constraintLayout">
+
+            <TextView
+                    android:text="@string/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userName" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    android:text="@string/eventDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="5dp"
+                    android:id="@+id/eventDetails" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/userName"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/eventExplanation"/>
+
+            <TextView
+                    android:text="@string/eventExplanation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventExplanation"
+                    android:background="@drawable/box_back_black"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_like"
+                android:id="@+id/eventLike" app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" android:scaleType="fitXY"
+                android:contentDescription="@string/eventLike" android:layout_marginStart="3dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="4dp"/>
+
+        <TextView
+                android:text="@string/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likeCount" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/eventLike"
+                app:layout_constraintBottom_toBottomOf="@+id/eventLike"
+                app:layout_constraintTop_toTopOf="@+id/eventLike" android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

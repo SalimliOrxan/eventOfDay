@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1015423401153",
+    "firebase_url": "https://event-of-day.firebaseio.com",
+    "project_id": "event-of-day",
+    "storage_bucket": "event-of-day.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015423401153:android:a978713abb7b95788f6840",
+        "android_client_info": {
+          "package_name": "com.orxan.eventofday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015423401153-aumvj3pt8otldlbt4aghaintschuj437.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orxan.eventofday",
+            "certificate_hash": "9f5655a795dcd4c163676606734007ec780d7d7e"
+          }
+        },
+        {
+          "client_id": "1015423401153-dea3k29gcece1br2ct01gn27c5bk63c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnMFCw2oR-5EPaU5ALVxIcLymUpJTwArk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015423401153-dea3k29gcece1br2ct01gn27c5bk63c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

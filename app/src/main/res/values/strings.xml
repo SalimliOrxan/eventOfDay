@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Event Of Day</string>
+    <string name="title">Title</string>
+    <string name="explanation">Explanation</string>
+    <string name="clubHome">Home Club</string>
+    <string name="clubAway">Away Club</string>
+    <string name="type">Type</string>
+    <string name="trust">Trust</string>
+    <string name="addEvent">TODO</string>
+    <string name="publish">Publish</string>
+    <string name="button">Button</string>
+    <string name="itemAdded">Name</string>
+    <string name="eventTitle">Title</string>
+    <string name="userName">username</string>
+    <string name="eventDetails">TextView</string>
+    <string name="eventExplanation">TextView</string>
+    <string name="eventLike">TODO</string>
+    <string name="remove">TODO</string>
+    <string name="likeCount">1</string>
+    <string-array name="percents">
+        <item>0%</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+
+    <!-- login register -->
+    <string name="loginR">login</string>
+    <string name="registerR">register</string>
+    <string name="appSlogan">Share</string>
+
+    <!-- register -->
+    <string name="register">register</string>
+    <string name="registerTitle">REGISTER</string>
+    <string name="back">TODO</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="passwordAgain">password again</string>
+
+    <!-- login -->
+    <string name="login">login</string>
+    <string name="forgot">forgot?</string>
+
+    <string name="createEvent">TODO</string>
+    <string name="dateFilter">Today</string>
+    <string name="emptyEvents">There is not any event today</string>
+
+
+</resources>
